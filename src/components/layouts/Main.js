@@ -10,6 +10,8 @@ export default class Main extends Component {
 			<Sidebar />
 			<Footer />
 			</div>
+
+
 			);
 		}
 	}

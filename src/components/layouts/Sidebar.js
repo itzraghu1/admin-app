@@ -1,18 +1,13 @@
 import React, {Component} from 'react';
 import Content from './Content';
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
-	Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 export default class SideBar extends Component {
 	render(){
 		return (
-			<Router>
+			<div>
 			<aside className="main-sidebar sidebar-dark-primary elevation-4">
 			<Link to="/blank/1" className="brand-link">
-			<img src="img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3"
+			<img src="/img/AdminLTELogo.png"  className="brand-image img-circle elevation-3"
 			style={{opacity: ".8"}} />
 			<span className="brand-text font-weight-light">AdminLTE 3</span>
 			</Link>
@@ -21,10 +16,10 @@ export default class SideBar extends Component {
 			<div className="sidebar">
 			<div className="user-panel mt-3 pb-3 mb-3 d-flex">
 			<div className="image">
-			<img src="img/user2-160x160.jpg" className="img-circle elevation-2" alt="User Image" />
+			<img src="/img/user2-160x160.jpg" className="img-circle elevation-2" />
 			</div>
 			<div className="info">
-			<a href="#" className="d-block">Alexander Pierce</a>
+			<a href="/fake" className="d-block">Alexander Pierce</a>
 			</div>
 			</div>
 
@@ -32,7 +27,7 @@ export default class SideBar extends Component {
 			<ul className="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 			
 			<li className="nav-item has-treeview menu-open">
-			<a href="#" className="nav-link active">
+			<a href="/fake" className="nav-link active">
 			<i className="nav-icon fas fa-tachometer-alt"></i>
 			<p>
 			Dashboard
@@ -70,7 +65,7 @@ export default class SideBar extends Component {
 			</a>
 			</li>
 			<li className="nav-item has-treeview">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="nav-icon fas fa-copy"></i>
 			<p>
 			Layout Options
@@ -124,7 +119,7 @@ export default class SideBar extends Component {
 			</ul>
 			</li>
 			<li className="nav-item has-treeview">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="nav-icon fas fa-chart-pie"></i>
 			<p>
 			Charts
@@ -153,7 +148,7 @@ export default class SideBar extends Component {
 			</ul>
 			</li>
 			<li className="nav-item has-treeview">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="nav-icon fas fa-tree"></i>
 			<p>
 			UI Elements
@@ -212,7 +207,7 @@ export default class SideBar extends Component {
 			</ul>
 			</li>
 			<li className="nav-item has-treeview">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="nav-icon fas fa-edit"></i>
 			<p>
 			Forms
@@ -247,7 +242,7 @@ export default class SideBar extends Component {
 			</ul>
 			</li>
 			<li className="nav-item has-treeview">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="nav-icon fas fa-table"></i>
 			<p>
 			Tables
@@ -294,7 +289,7 @@ export default class SideBar extends Component {
 			</a>
 			</li>
 			<li className="nav-item has-treeview">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="nav-icon far fa-envelope"></i>
 			<p>
 			Mailbox
@@ -323,7 +318,7 @@ export default class SideBar extends Component {
 			</ul>
 			</li>
 			<li className="nav-item has-treeview">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="nav-icon fas fa-book"></i>
 			<p>
 			Pages
@@ -382,7 +377,7 @@ export default class SideBar extends Component {
 			</ul>
 			</li>
 			<li className="nav-item has-treeview">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="nav-icon far fa-plus-square"></i>
 			<p>
 			Extras
@@ -473,13 +468,13 @@ export default class SideBar extends Component {
 			</li>
 			<li className="nav-header">MULTI LEVEL EXAMPLE</li>
 			<li className="nav-item">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="fas fa-circle nav-icon"></i>
 			<p>Level 1</p>
 			</a>
 			</li>
 			<li className="nav-item has-treeview">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="nav-icon fas fa-circle"></i>
 			<p>
 			Level 1
@@ -488,13 +483,13 @@ export default class SideBar extends Component {
 			</a>
 			<ul className="nav nav-treeview">
 			<li className="nav-item">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="far fa-circle nav-icon"></i>
 			<p>Level 2</p>
 			</a>
 			</li>
 			<li className="nav-item has-treeview">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="far fa-circle nav-icon"></i>
 			<p>
 			Level 2
@@ -503,19 +498,19 @@ export default class SideBar extends Component {
 			</a>
 			<ul className="nav nav-treeview">
 			<li className="nav-item">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="far fa-dot-circle nav-icon"></i>
 			<p>Level 3</p>
 			</a>
 			</li>
 			<li className="nav-item">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="far fa-dot-circle nav-icon"></i>
 			<p>Level 3</p>
 			</a>
 			</li>
 			<li className="nav-item">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="far fa-dot-circle nav-icon"></i>
 			<p>Level 3</p>
 			</a>
@@ -523,7 +518,7 @@ export default class SideBar extends Component {
 			</ul>
 			</li>
 			<li className="nav-item">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="far fa-circle nav-icon"></i>
 			<p>Level 2</p>
 			</a>
@@ -531,26 +526,26 @@ export default class SideBar extends Component {
 			</ul>
 			</li>
 			<li className="nav-item">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="fas fa-circle nav-icon"></i>
 			<p>Level 1</p>
 			</a>
 			</li>
 			<li className="nav-header">LABELS</li>
 			<li className="nav-item">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="nav-icon far fa-circle text-danger"></i>
 			<p className="text">Important</p>
 			</a>
 			</li>
 			<li className="nav-item">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="nav-icon far fa-circle text-warning"></i>
 			<p>Warning</p>
 			</a>
 			</li>
 			<li className="nav-item">
-			<a href="#" className="nav-link">
+			<a href="/fake" className="nav-link">
 			<i className="nav-icon far fa-circle text-info"></i>
 			<p>Informational</p>
 			</a>
@@ -562,8 +557,9 @@ export default class SideBar extends Component {
 
 			
 			<Content />
+			</div>
 
-			</Router>
+			
 			)
 		}
 	}

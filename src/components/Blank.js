@@ -1,19 +1,11 @@
 import React, {Component} from 'react';
-import {
-	BrowserRouter as Router,
-	Switch,
-	Route,
-	Link,
-	useParams,
-	useRouteMatch
-} from "react-router-dom";
 
 export default class Blank extends Component {
 
-	constructor(props) {
+	constructor(props,match) {
 		super(props);
 
-
+		console.log(props.match.params.id)
 		this.state = {};
 	}
 	componentDidMount(){

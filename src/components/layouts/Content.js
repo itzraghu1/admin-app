@@ -14,13 +14,11 @@ export default class Content extends Component {
 	render(){
 		return (
 			<Switch>
-			<Route path="/blank/:id">
-			<Blank  />
-			</Route>
-			<Route path="/dashboard">
-			<Dashboard />
-			</Route>
+			<Route path="/blank" exact component={Dashboard} />
+			<Route path="/blank/:id" exact component={Blank} />
+			<Route path="/dashboard" component={Dashboard} />
 			</Switch>
+
 			)
+		}
 	}
-}
