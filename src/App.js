@@ -25,6 +25,7 @@ function App() {
 		<Route path='/blank' exact component={Blank} />
 		</Route>
 		</Main>
+
 		</Switch>
 		</Router>
 
