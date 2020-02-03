@@ -8,6 +8,7 @@ export default class Main extends Component {
 			<div>
 			<Header />
 			<Sidebar />
+			{ this.props.children }
 			<Footer />
 			</div>
 

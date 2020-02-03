@@ -6,7 +6,7 @@ export default class SideBar extends Component {
 		return (
 			<div>
 			<aside className="main-sidebar sidebar-dark-primary elevation-4">
-			<Link to="/blank/1" className="brand-link">
+			<Link to="/blank" className="brand-link">
 			<img src="/img/AdminLTELogo.png"  className="brand-image img-circle elevation-3"
 			style={{opacity: ".8"}} />
 			<span className="brand-text font-weight-light">AdminLTE 3</span>
@@ -19,7 +19,7 @@ export default class SideBar extends Component {
 			<img src="/img/user2-160x160.jpg" className="img-circle elevation-2" />
 			</div>
 			<div className="info">
-			<a href="/fake" className="d-block">Alexander Pierce</a>
+			<Link to="/dashboard" className="d-block">Alexander Pierce</Link>
 			</div>
 			</div>
 
@@ -554,9 +554,7 @@ export default class SideBar extends Component {
 			</nav>
 			</div>
 			</aside>
-
 			
-			<Content />
 			</div>
 
 			
